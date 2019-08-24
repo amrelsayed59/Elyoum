@@ -1,0 +1,99 @@
+/*Start international Details*/
+.international-details{
+    background-color: $whiteColor;
+    padding: 20px;
+    margin-bottom: 15px;
+    @media(max-width: 575px){
+        text-align: center;
+    }
+
+    .international-head{
+      
+        font-weight: bold;
+        line-height: 30px;
+        @media(max-width: 575px){
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+    .date-p{color: $redColor; font-weight: bold;}
+
+    .img-international{
+      
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }//img-international
+
+    .international-content{
+        margin-top: 15px;
+        .book-name{
+            color: $redColor;
+            margin-bottom: 5px;
+            span{
+                color: $blackColor;
+            }//span
+        }//book-name
+
+        ul{
+            .list-img{
+                background: $redColor;
+                display: inline-block;
+                padding: 4px 9px;
+                width: 45px;
+                height: 35px;
+                img{
+                    width: 100%;
+                }
+            }//list-img
+            li{
+                display: inline-block;
+                background-color: $greyColor;
+                padding: 4px 20px;
+                margin: 0 3px;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                @media(max-width: 575px){
+                    margin-bottom: 10px;
+                }//media
+                &:hover{
+                    background-color: #dedada;
+                }
+            }//li
+        }//ul
+
+        .social-icons{
+            li{
+                padding: 5px 50px;
+                margin: 0;
+                @media(min-width: 768px) and (max-width: 991px){
+                    padding: 5px 40px;
+                }
+                @media(max-width: 575px){
+                    margin-bottom: 10px;
+                }
+            }
+            .facebook{background-color: #3083e1}
+            .twitter{background-color: #35b6f8}
+            .googleplus{background-color: #ca2d38}
+            .instagram{background-color: #c1674f}
+
+            .style-icon{  
+                background: rgba(255, 239, 239, 0.11);
+                padding: 5px;
+                border-radius: 50%;
+                font-size: 18px;
+                color: #FFF;
+            }//
+        }
+
+    }//international-content
+
+}//international-details
+
+
+/*End International Details*/

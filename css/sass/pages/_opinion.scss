@@ -1,0 +1,48 @@
+.opinion{
+    .last-news{
+        margin: 15px 0;
+        .last-news-img{
+            width: 110px;
+            height: 110px;
+            @media(max-width: 768px){
+                margin: 10px auto;
+            }
+            img{
+                width: 100% !important;
+                height: 100% !important;
+            }//img
+        }//last-news-img
+
+        .last-news-details{
+            @media(max-width: 768px){
+               text-align: center !important;
+               padding-left: 0 !important;
+
+            }
+            h5{
+                @media(max-width: 768px){
+                    font-size: 15px !important;
+     
+                 }
+            }
+            .btn-info-det{
+                p{
+                    span{
+                        margin-left: 15px;
+                        @media(max-width: 575px){
+                            display: block;
+                        }
+                    }
+                }
+            }//btn-info-det
+            p{
+                width: 95% !important;
+                @media(max-width: 768px){
+                   width: 100% !important;
+     
+                 }
+            }//p
+        }//last-news-details
+
+    }//last-news
+}//opinion

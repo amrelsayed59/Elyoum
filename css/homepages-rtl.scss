@@ -1,0 +1,396 @@
+@import 'sass/helpers/variables';
+
+$float-left: right;
+$float-right: left;
+
+$text-right: left;
+$text-left: right;
+
+
+/*Start Header*/
+.header {
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid $greyColor;
+    .logo{
+        width: 30%;
+        float: $float-left;
+        position: relative;
+        @media #{$minSmall} {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+         @media #{$minMedium} {
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+        
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        p{
+            
+        }
+        
+        
+    }
+    .navbar{
+        overflow: hidden;
+        background-color: $redColor;
+        border-radius: 15px;
+        width: 100%;
+        @media #{$minSmall} {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+            display: block !important;
+        }
+         @media #{$minMedium} {
+            width: 70%;
+            float: $float-left;
+             margin-top: 1em;
+        }
+         @media #{$maxMobile} {
+            display: none;
+            border-radius: 0;
+        }
+        li{
+            width: 20%;
+            float: $float-left;
+            font-size: 18px;
+            text-align: center;
+             @media #{$maxMobile} {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: $text-left;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                padding: 20px 10px;
+                &:hover{
+                    color: #DDD;
+                    
+                }
+            }
+            
+        }
+        
+    }
+}
+/*End Header*/
+
+/**** End Home Page  ****/
+    /*Start Slider*/
+
+.slider {
+    blockquote {
+        font: {
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: Tahoma, Arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+        
+    }
+    img {
+        max-width: 100%;
+        
+    }
+    .bullets{
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 3px solid $greyColor;
+            cursor: pointer;
+            &.active,
+             &:hover {
+                background-color: #fff;
+                border: 3px solid #333;
+            }
+        }
+        
+    }
+}
+
+/*End Slider*/
+
+/*Start Services*/
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $float-left;
+            width: (100% / 3);
+             &:not(:last-of-type){
+            padding-right: 20px;}
+        }
+        @media #{$maxMobile} {
+            i{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title{
+            color: #666;
+            i {
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+                padding: 0 5px;
+            }
+        }
+        
+        .service-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/*End Services*/
+
+/*Start Our Players*/
+.our-players {
+    .player-box {
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2 );
+            text-align: center;
+            margin-bottom: 40px;
+        }
+         @media #{$minMedium} {
+            width: (100% / 3 );
+            text-align: $text-left;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$minLarge} {
+            width: (100% / 5 );
+        }
+        @media #{$maxMobile} {
+            margin-bottom: 40px;
+        }
+       
+        .player-img{
+            max-width: 100%;
+        }
+        .player-title{
+            font-weight: normal;
+            color: #666;
+            span {
+                font-weight: bold;
+            }
+        }
+        
+        .player-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/*End Our Players*/
+
+/* Start Lorem Ipsum */
+
+.lorem-ipsum {
+    .lorem-box{
+        float: $float-left;
+        width: (94% / 3);
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        .lorem-img{
+            max-width: 100%;
+        }
+    }
+}
+    /* End Lorem Ipsum */
+/**** End Home Page  ****/
+
+/*Start Footer*/
+.footer {
+    background-color: #e2e2e2;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .gallery, .info, .contact {
+        float: $float-left;
+        @media #{$maxMobile} {
+            float: none;
+            text-align: center
+        }
+    }
+    .gallery{
+        @media #{$minSmall} {
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            
+            img{
+                @media #{$minSmall} {
+                    float: $float-left;
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text{
+                @media #{$minSmall} {
+                    float: $float-left;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc(100% - 180px);
+                } 
+                h4{
+                    color: $redColor;
+                    margin: 20px 0 0;
+                }
+                p{
+                    color: #888;
+                    line-height: 1.9;
+                    margin-top: 8px;
+                }
+                
+            }
+        }
+    }
+    .info{
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        ul{
+            color: #888;
+            line-height: 1.8;
+        }
+        li{
+            span{
+                color: $redColor;
+                font-weight: 600;
+            }
+        }
+        h4{
+            color: #888;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p{
+            color: #888;
+            margin-top: 8px
+        }
+    }
+    .contact {
+         @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: 1px solid #c9c9c9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    .section-title{
+        color: #444;
+        font-weight: normal
+    }
+    .copyright{
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        overflow: hidden;
+        color: #888;
+        margin-top: 30px;
+        .text,
+        .author{
+            float: $float-left;
+            width: 50%;
+        }
+        .author{
+            text-align: $text-right;
+        }
+    }
+}
+/*End Footer*/
+
+/*Start Buttons*/
+.main-button {
+    background-color: rgba($redColor, .8);
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    min-width: 120px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+        background-color: $redColor
+    }
+}
+
+.the-toggler{
+    background-color: $redColor;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: auto;
+    left: 15px;
+    display: none;
+    @media #{$maxMobile} {
+        display: block;
+    }
+    span{
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #FFF;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+/*End Buttons*/
+
+

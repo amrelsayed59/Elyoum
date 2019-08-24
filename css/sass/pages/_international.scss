@@ -1,0 +1,49 @@
+/*Start Last News*/
+.last-second-news{
+    padding: 15px 0 !important;
+    .last-news-content{
+        .last-news-details{
+           .btn-info-det{
+                p{
+                    color: $redColor !important;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+           }//btn-info-
+           h5{
+               line-height: 28px !important;
+           }
+        }//last-news-details
+    }//last-news-content
+
+}//last-news
+/*End Last News*/
+
+/*Start Second Main Advertising*/
+.second-main-advertising{
+padding: 30px 0;
+}//second-main-advertising
+/*End Second Main Advertising*/
+
+ /* Start Pagination */
+ .main-pagination{
+    display: table;
+    margin: auto;
+    padding-top: 20px;
+    @media(max-width: 575px) {
+        padding-top: 0px;
+    }
+
+.page-link{
+    color: #000;
+    background-color: transparent; 
+    border: none;
+    &:focus{
+        background: $blueColor;
+        color: #fff;
+    }
+}//page-link
+
+}//main-pagination
+
+/* End Pagination */

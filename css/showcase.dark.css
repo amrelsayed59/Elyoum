@@ -1,0 +1,15 @@
+#jqShowcaseContainer {
+	--active: #2bbd68;
+	--danger: #f02f2f;
+	--text-primary: #ffffff;
+	--text-secondary: #000000;
+	--border-nav: #000000;
+	--border-content: #000000;
+	--border-primary: #494949;
+	--border-secondary: #a7a7a7;
+	--bg-overlay: rgba(80, 80, 80, 0.9);
+	--bg-primary: #202020;
+	--bg-primary-object: rgba(0, 0, 0, 0.5);
+	--bg-button: #a7a7a7;
+	--bg-progress: #d8f0d8;
+}

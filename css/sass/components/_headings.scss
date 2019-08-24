@@ -1,0 +1,37 @@
+.head-with-border{
+    position: relative;
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 10px;
+            background: $blueColor;
+            left: 4px;
+            bottom: -19px;
+            border-radius: 10px;
+        }//after
+        &:after {
+            position: absolute;
+            content: '';
+            width: 230px;
+            height: 2px;
+            background: #ed1b34;
+            left: 4px;
+            bottom: -15px;
+        }//after
+    
+     @media(max-width: 575px){
+         font-size: 18px !important;
+         &:after {
+             width: 165px;
+         }//after 
+             
+    }
+    
+}//head-with-border
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+}

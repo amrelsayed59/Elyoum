@@ -1,0 +1,87 @@
+.opinion-details{
+    padding: 0;
+    .background-opinion{
+        background-color: #a92121;
+        .img-international{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            img{
+                margin-top: 25px;
+            }//img
+        }//img-
+    }//background-opinion
+
+    .international-content{
+        padding: 20px;
+        @media(max-width: 575px){
+            text-align: center;
+        }
+        .book-name{
+            text-align: center;
+            color: #000 !important; 
+            font-weight: bold;
+        }//book-
+        .opinion-head{
+            color: $redColor;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }//opinion-head
+        .opinion-date{
+            margin: 0;
+            color: $redColor;
+            font-weight: bold;
+            @media(max-width: 575px){
+               margin-bottom: 10px;
+            }
+        }
+    }//international-content
+    
+}//opinion-details
+
+.same-books-opinion{
+    padding: 0 !important;
+    .policy-categories{
+        .nav-img{
+            padding: 5px;
+            height: 100px !important;
+            margin-bottom: 5px;
+            @media(max-width: 991px){
+                width: 100px !important;
+                height: 100px !important;
+                margin: auto;
+            }
+        }//nav-img
+
+        .main-policy{
+            padding: 5px;
+            margin-bottom: 0;
+            @media(max-width: 991px){
+               text-align: center;
+            }
+            .nav-details{
+                margin-top: 15px;
+                @media(max-width: 575px){
+                    margin-top: 0;
+                }
+                h6{
+                    margin-bottom: 15px;
+                }//h6
+                h5{
+                    line-height: 22px;
+                }//h5
+
+            }//nav-details
+        }//main-policy
+
+
+    }//policy-categories
+
+}//same-books-opinion
+
+
+.last-news-opinion{
+    padding: 0 !important;
+
+}//last-news-opinion
