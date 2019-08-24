@@ -1,4 +1,4 @@
 # Elyoum
 News Website
 
-## project Notes
+## Project Notes
